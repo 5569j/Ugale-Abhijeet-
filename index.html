@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhijeet Ugale Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth;}
+    body {font-family: 'Poppins', sans-serif; background-color: #000; color: #fff;}
+    header, section, footer {padding: 50px 20px; text-align: center;}
+    header {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+    header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(100%);
+    }
+    header .overlay {
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      color: white;
+      text-align: left;
+      animation: slideIn 2s ease-out forwards;
+    }
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1rem;
+    }
+    @keyframes slideIn {
+      0% {opacity: 0; transform: translateX(-20px);}
+      100% {opacity: 1; transform: translateX(0);}
+    }
+
+    h2 {color: #fff; margin-bottom: 20px;}
+    .section-box {max-width: 800px; margin: auto;}
+    ul {list-style: none; padding: 0;}
+    li::before {content: '✅ '; color: #90ee90;}
+
+    .education-item {
+      font-weight: 600;
+      margin: 10px 0;
+      background-color: #111;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .skill {margin-bottom: 20px; text-align: left;}
+    .skill p {margin-bottom: 5px; font-weight: 600;}
+    .bar {
+      background-color: #333;
+      border-radius: 25px;
+      overflow: hidden;
+      height: 25px;
+    }
+    .fill {
+      background-color: #90ee90;
+      color: black;
+      text-align: right;
+      padding-right: 10px;
+      height: 100%;
+      line-height: 25px;
+      border-radius: 25px;
+      animation: growBar 2s ease-out forwards;
+    }
+    @keyframes growBar {
+      0% {width: 0;}
+      100% {width: var(--width);}
+    }
+
+    .hobbies span {
+      display: inline-block;
+      margin: 10px;
+      font-size: 1.2rem;
+      animation: popIn 1s ease forwards;
+    }
+    @keyframes popIn {
+      0% {opacity: 0; transform: scale(0.5);}
+      100% {opacity: 1; transform: scale(1);}
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      padding: 20px;
+    }
+    a {color: #90ee90; text-decoration: none;}
+  </style>
+</head>
+<body>
+  <header>
+    <img src="formal_photo.jpg" alt="Abhijeet Ugale">
+    <div class="overlay">
+      <h1>Abhijeet Sachin Ugale</h1>
+      <p>IT Engineering | DY Patil Institute, Pune</p>
+    </div>
+  </header>
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="section-box">
+      <p>Hello! I am Abhijeet Ugale, passionate about tech, coding, and creativity. I started my IT Engineering journey in 2024 at Dr. DY Patil Institute of Technology, Pune.</p>
+    </div>
+  </section>
+  <section id="education">
+    <h2>Education</h2>
+    <div class="section-box">
+      <div class="education-item">SSC: Bhimashankar English Medium School – 89.77%</div>
+      <div class="education-item">HSC: Late B.P. Patil Junior College of Science – 86.88%</div>
+      <div class="education-item">Current: B.E. IT – Dr. D.Y. Patil Institute of Technology, Pune (2024–)</div>
+    </div>
+  </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="section-box">
+      <div class="skill"><p>💻 Java</p><div class="bar"><div class="fill" style="width: 100%;">100%</div></div></div>
+      <div class="skill"><p>🌐 HTML</p><div class="bar"><div class="fill" style="width: 100%;">100%</div></div></div>
+      <div class="skill"><p>🎨 CSS</p><div class="bar"><div class="fill" style="width: 80%;">80%</div></div></div>
+      <div class="skill"><p>⚙️ JavaScript</p><div class="bar"><div class="fill" style="width: 80%;">80%</div></div></div>
+      <div class="skill"><p>📊 DSA</p><div class="bar"><div class="fill" style="width: 90%;">90%</div></div></div>
+    </div>
+  </section>
+  <section id="hobbies">
+    <h2>Hobbies</h2>
+    <div class="hobbies">
+      <span>⚽ Playing Football</span>
+      <span>🧳 Traveling & Exploring</span>
+      <span>🌾 Farming</span>
+    </div>
+  </section>
+  <footer>
+    <p>📞 8237077991 | 📍 <a href="https://maps.app.goo.gl/J4V3PtZhfcEY28mu9" target="_blank">DYPIT, Pune</a><br>
+    📸 <a href="https://www.instagram.com/abhijeet.ugale_">Instagram</a></p>
+  </footer>
+</body>
+</html>
